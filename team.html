@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="description" content="ZUPCLOTHING" />
     <meta name="author" content="Group 2 Creative Web Design 2020" />
     <link rel="icon" href="./favicon.ico" />
@@ -23,39 +23,80 @@
     />
     <meta name="twitter:card" content="summary_large_image" />
 
-     <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" async>
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Zilla+Slab:wght@700&display=swap" async>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+      async
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Zilla+Slab:wght@700&display=swap"
+      async
+    />
 
     <!-- BOOTSTRAP SOCIAL -->
-    <link rel="stylesheet" href="./css/bootstrap-social.css" async/>
+    <link rel="stylesheet" href="./css/bootstrap-social.css" async />
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="./frameworks/MDB/css/bootstrap.min.css" async>
-  <!-- Material Design Bootstrap -->
-  <link rel="stylesheet" href="./frameworks/MDB/css/mdb.min.css" async>
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="./frameworks/MDB/css/bootstrap.min.css"
+      async
+    />
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="./frameworks/MDB/css/mdb.min.css" async />
 
     <!-- NIKS CUSTOM CSS -->
-    <link rel="stylesheet" href="./css_from_niks/style_niks.css" async/>
+    <link rel="stylesheet" href="./css_from_niks/style_niks.css" async />
 
     <!-- New Navbar -->
-    <link rel="stylesheet" href="./css/new_navbar.css" async/>
+    <link rel="stylesheet" href="./css/new_navbar.css" async />
 
     <!-- Carousel.css -->
-    <link rel="stylesheet" href="./css/carousel.css" async/>
+    <link rel="stylesheet" href="./css/carousel.css" async />
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="./css/index.styles.css" async/>
+    <link rel="stylesheet" href="./css/index.styles.css" async />
 
     <!-- Animate.CSS CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    async/>
+      async
+    />
 
     <!-- Normalize css LOCAL-->
-    <link rel="stylesheet" href="./css/normalize.css" async/>
+    <link rel="stylesheet" href="./css/normalize.css" async />
+    <style type="text/css">
+      html,
+      body {
+        font-family: "Raleway";
+      }
+
+      #contact-bg {
+        width: 100%;
+        /* height: 40vh; */
+        /* background-image: url("https://i.imgur.com/sH8MxTRh.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-attachment: fixed; */
+      }
+
+      .text-contact {
+        top: 7vh;
+      }
+
+      .card-social-icons ul li a {
+        color: #fff;
+      }
+
+      .card-social-icons ul li a:hover {
+        color: #9b59b6;
+      }
+    </style>
   </head>
   <body>
     <header style="margin-bottom: 100px">
@@ -70,24 +111,34 @@
           </div>
           <div id="mainListDiv" class="main_list">
             <ul class="navlinks">
-              <li><a href="./index.html">Home</a></li>
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
               <li><a href="./mens.html">Mens</a></li>
               <li><a href="./womens.html">Womens</a></li>
-              <li>
-                <a
-                  href="./contact.html"
-                  >Contact</a
-                >
+              <li><a href="./contact.html">Contact</a></li>
+              <!-- ICONS -->
+              <li class="menu_search_icons">
+                <a href=""><i class="fas fa-search fa-lg"></i></a>
               </li>
-              <li>
-                <a href="#"><i class="fas fa-search fa-lg"></i></a>
+              <li class="menu_shopping_cart_icons">
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
               </li>
-              <li>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-              </li>
-              <li>
+              <li class="menu_account_icons">
                 <a data-toggle="modal" data-target="#signUp">
                   <i class="fas fa-user-circle fa-lg"></i>
+                </a>
+              </li>
+              <!-- ICONS TO WORDS -->
+              <li class="menu_search_words">
+                <a href=""><i class="fas fa-search fa-lg"></i> Search</a>
+              </li>
+              <li class="menu_shopping_cart_words">
+                <a href=""><i class="fas fa-shopping-cart"></i> Cart</a>
+              </li>
+              <li class="menu_account_words">
+                <a data-toggle="modal" data-target="#signUp">
+                  <i class="fas fa-user-circle fa-lg"></i> Sign-up
                 </a>
               </li>
             </ul>
@@ -101,130 +152,54 @@
       </nav>
     </header>
 
-    <div class="container">
-      <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
-        <div class="col-md-6 px-0">
-          <h1 class="display-4">ZupClothing Team</h1>
-          <p class="lead my-3">
-            The men and women behind the ZC. 
-It is a collaboration of the best professionals and product designers.
-          </p>
+    <div id="contact-bg" class="my-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center text-white text-contact">
+            <img
+              class="img-fluid"
+              style="
+                width: 15%;
+                filter: drop-shadow(2px 4px 8px black);
+                border-radius: 50%;
+              "
+              src="https://i.imgur.com/xirkbAI.jpg"
+            />
+            <h1 class="font-weight-bold contactus">ZupClothing Team</h1>
+            <p class="text-white h4">
+              It is a collaboration of the best professionals
+            </p>
+            <p class="text-white h4">
+              and product designers available in the industry today.
+            </p>
+            <p class="text-white h4">Meet the glam team.</p>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div
-        class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden"
-      >
-        <div class="my-3 py-3">
-          <h2 class="display-5">Ms. Angeli</h2>
-          <p class="lead">Project Head/Instructor</p>
-        </div>
-        <img
-          src="https://i.imgur.com/4CI2oBUh.jpg"
-          class="bg-light shadow-sm mx-auto"
-          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; object-fit: cover;"
-        ></img>
-      </div>
-      <div
-        class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-      >
-         <div class="my-3 py-3">
-          <h2 class="display-5">Yanna</h2>
-          <p class="lead">Lead UI/UX and Product Designer</p>
-        </div>
-        <img
-          src="https://i.imgur.com/3YuOwAdh.jpg"
-          class="bg-light shadow-sm mx-auto"
-          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; object-fit: cover;"
-        ></img>
-      </div>
-    </div>
-
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div
-        class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-      >
-       <div class="my-3 py-3">
-          <h2 class="display-5">Jun</h2>
-          <p class="lead">Team Leader/Consultant</p>
-        </div>
-        <img
-          src="https://i.imgur.com/oMhJPf4h.jpg"
-          class="bg-light shadow-sm mx-auto"
-          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; object-fit: cover;"
-        ></img>
-      </div>
-      <div
-        class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-      >
-         <div class="my-3 py-3">
-          <h2 class="display-5">Niks</h2>
-          <p class="lead">Front-end Engineer and Product Designer</p>
-        </div>
-        <img
-          src="https://i.imgur.com/UFtbKiih.jpg"
-          class="bg-light shadow-sm mx-auto"
-          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; object-fit: cover;"
-        ></img>
-      </div>
-    </div>
-
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div
-        class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-      >
-        <div class="my-3 py-3">
-          <h2 class="display-5">Ajie</h2>
-          <p class="lead">Front-end Engineer, Business Concepts and Product Designer</p>
-        </div>
-        <img
-          src="https://i.imgur.com/XNGZ0oT.jpg"
-          class="bg-light shadow-sm mx-auto"
-          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; object-fit: cover;"
-        ></img>
-      </div>
-      <div
-        class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-      >
-       <div class="my-3 py-3">
-          <h2 class="display-5">Mc</h2>
-          <p class="lead">Project Manager</p>
-        </div>
-        <img
-          src="https://i.imgur.com/mwlB0ir.jpg"
-          class="bg-light shadow-sm mx-auto"
-          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; object-fit: cover;"
-        ></img>
-      </div>
-    </div>
-
-    <!-- <footer class="text-muted">
-      <div class="container">
-        <p class="float-right">
-          <a href="#">Back to top <i class="fas fa-level-up-alt"></i></a>
-        </p>
-      </div>
-    </footer> -->
-
-    <!-- SNIPPETS FROM NIKS -->
-      <footer class="page-footer mt-5">
-        <div class="container-fluid text-md-left py-5">
-          <div class="row row-margin">
-            <div class="col-md-4 col-lg-4">
-              <a class="" href="./index.html"
-                ><img
-                  class="Logo img-fluid"
-                  src="https://i.imgur.com/30zUC0T.png"
-                  alt="ZupClothing Logo"
-              /></a>
-              <!-- <p class="footer-about h5 mt-3">About Zup Clothing</p> -->
-              <p class="h6 mt-4">
-                ZC is the leading name in online shopping for fashion, carrying an ever-expanding line-up of top local and international brands tailored for consumers around the world. Our selection of over 120.000 products covers every aspect of fashion, for men and women and so much more.
-              </p>
-              <div class="footer-social-icons mb-sm-3">
-                <p class="footer-follow h5 mt-3">FIND US ON</p>
+    <div class="container-fluid py-5 my-5">
+      <div class="row row-margin">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <!--Card-->
+          <div class="card overlay inner">
+            <!--Card image-->
+            <div class="view">
+              <img
+                src="https://i.imgur.com/JEgcrVT.jpg"
+                class="card-img-top img-card"
+                alt="photo"
+              />
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Card content-->
+            <div class="card-body text-center">
+              <!--Title-->
+              <h4 class="card-title mb-2">Ms. Angeli</h4>
+              <!--Text-->
+              <p class="card-text text-white">Project Head / Instructor</p>
+              <div class="card-social-icons mb-sm-3">
                 <ul class="list-unstyled list-inline mb-0 mt-4">
                   <li class="list-inline-item">
                     <a class="" href="#" target="_blank">
@@ -244,94 +219,372 @@ It is a collaboration of the best professionals and product designers.
                 </ul>
               </div>
             </div>
-            <div class="col-md-2 col-lg-2">
-              <div class="helpful-links">
-                <p class="h5 footer-products">Products</p>
-                <ul class="list-unstyled mt-4">
-                  <li>
-                    <a href="./mens.html">Men</a>
-                  </li>
-                  <li>
-                    <a href="./womens.html">Women</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          </div>
+          <!--/.Card-->
+        </div>
 
-            <div class="col-md-2 col-lg-2">
-              <div class="helpful-links">
-                <p class="h5 footer-info">Information</p>
-                <ul class="list-unstyled mt-4">
-                  <li>
-                    <a href="./index.html">Home</a>
-                  </li>
-                  <li>
-                    <a href="./about.html">About</a>
-                  </li>
-                  <li>
-                    <a href="./contact.html">Contact</a>
-                  </li>
-                  <li>
-                     <a href="./team.html">Developers</a>
-                  </li>
-                   <!-- FEEDBACK MODAL -->
-                  <li>
-                    <a style="color: violet;"data-toggle="modal" data-target="#feedback">Feedback</a>
-                  </li>
-                </ul>
-              </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <!--Card-->
+          <div class="card overlay inner">
+            <!--Card image-->
+            <div class="view">
+              <img
+                src="https://i.imgur.com/3YuOwAd.jpg"
+                class="card-img-top img-card"
+                alt="photo"
+              />
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
             </div>
-
-            <div class="col-md-4 col-lg-4">
-              <div class="newtozupclothing">
-                <p class="h5 footer-info">New to Zup Clothing?</p>
-                <ul class="list-unstyled mt-4">
-                  <li>
-                    <p>
-                      Be the first one to get the latest updates from Zup
-                      Clothing and get
-                      <span class="voucher"><b>Php 500 VOUCHER.</b></span>
-                    </p>
+            <!--Card content-->
+            <div class="card-body text-center">
+              <!--Title-->
+              <h4 class="card-title mb-2">Yanna</h4>
+              <!--Text-->
+              <p class="card-text text-white">
+                Lead UI / UX and Product Designer
+              </p>
+              <div class="card-social-icons mb-sm-3">
+                <ul class="list-unstyled list-inline mb-0 mt-4">
+                  <li class="list-inline-item">
+                    <a class="" href="#" target="_blank">
+                      <i class="fab fa-facebook fa-2x"></i>
+                    </a>
                   </li>
-                  <li>
-                    <div class="md-form">
-                      <input
-                        type="text"
-                        id="form-subject"
-                        class="form-control"
-                      />
-                      <label for="form-subject" class="text-white"
-                        >Email Address</label
-                      >
-                    </div>
-                    <!-- BUTTONS RESPONSIVE ISSUE HERE -->
-                    <div style="display: flex; justify-content: space-between">
-                      <!-- <div class="float-left"> -->
-                      <button type="button" class="button btnwomen">
-                        FOR WOMEN
-                      </button>
-                      <!-- </div> -->
-                      <!-- <div class="float-right"> -->
-                      <button type="button" class="button btnmen">
-                        FOR MEN
-                      </button>
-                      <!-- </div> -->
-                    </div>
+                  <li class="list-inline-item">
+                    <a class="" href="#" target="_blank">
+                      <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="" href="#" target="_blank">
+                      <i class="fab fa-instagram fa-2x"></i>
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+          <!--/.Card-->
         </div>
-        <div class="footer-copyright text-center py-3 text-white">
-          © 2020
-          <a href="#">Zup Clothing - All rights reserved.</a>
-          <p>Created with dedication, hard work and passion by Group 2 - Creative Web Design Batch 1 - <a href="https://www.facebook.com/mindtechTC/" target="_blank"
-        rel="noopener noreferrer">Mindtech Training And Development Institute Inc.</a> </p>
-        </div>
-      </footer>
 
-        <!-- Sign-up Modal -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <!--Card-->
+          <div class="card overlay inner">
+            <!--Card image-->
+            <div class="view">
+              <img
+                src="https://i.imgur.com/oMhJPf4.jpg"
+                class="card-img-top img-card"
+                alt="photo"
+              />
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Card content-->
+            <div class="card-body text-center">
+              <!--Title-->
+              <h4 class="card-title mb-2">Jun</h4>
+              <!--Text-->
+              <p class="card-text text-white">Team Leader / Consultant</p>
+              <div class="card-social-icons mb-sm-3">
+                <ul class="list-unstyled list-inline mb-0 mt-4">
+                  <li class="list-inline-item">
+                    <a class="" href="#" target="_blank">
+                      <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="" href="#" target="_blank">
+                      <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="" href="#" target="_blank">
+                      <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--/.Card-->
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <!--Card-->
+          <div class="card mt-5 overlay inner">
+            <!--Card image-->
+            <div class="view">
+              <img
+                src="https://i.imgur.com/X1L0yXV.jpg"
+                class="card-img-top img-card"
+                alt="photo"
+              />
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Card content-->
+            <div class="card-body text-center">
+              <!--Title-->
+              <h4 class="card-title mb-2">Niks</h4>
+              <!--Text-->
+              <p class="card-text text-white">
+                Front-end Engineer and Product Designer
+              </p>
+              <div class="card-social-icons mb-sm-3">
+                <ul class="list-unstyled list-inline mb-0 mt-4">
+                  <li class="list-inline-item">
+                    <a class="" href="#" target="_blank">
+                      <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="" href="#" target="_blank">
+                      <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="" href="#" target="_blank">
+                      <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--/.Card-->
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <!--Card-->
+          <div class="card mt-5 overlay inner">
+            <!--Card image-->
+            <div class="view">
+              <img
+                src="https://i.imgur.com/XNGZ0oT.jpg"
+                class="card-img-top img-card"
+                alt="photo"
+              />
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Card content-->
+            <div class="card-body text-center">
+              <!--Title-->
+              <h4 class="card-title mb-2">Ajie</h4>
+              <!--Text-->
+              <p class="card-text text-white">
+                Front-end Engineer and Business Concepts
+              </p>
+              <div class="card-social-icons mb-sm-3">
+                <ul class="list-unstyled list-inline mb-0 mt-4">
+                  <li class="list-inline-item">
+                    <a class="" href="#" target="_blank">
+                      <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="" href="#" target="_blank">
+                      <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="" href="#" target="_blank">
+                      <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--/.Card-->
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <!--Card-->
+          <div class="card mt-5 overlay inner">
+            <!--Card image-->
+            <div class="view">
+              <img
+                src="https://i.imgur.com/xVxHNK4.jpg"
+                class="card-img-top img-card"
+                alt="photo"
+              />
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Card content-->
+            <div class="card-body text-center">
+              <!--Title-->
+              <h4 class="card-title mb-2">Mc</h4>
+              <!--Text-->
+              <p class="card-text text-white">Project Manager</p>
+              <div class="card-social-icons mb-sm-3">
+                <ul class="list-unstyled list-inline mb-0 mt-4">
+                  <li class="list-inline-item">
+                    <a class="" href="#" target="_blank">
+                      <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="" href="#" target="_blank">
+                      <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="" href="#" target="_blank">
+                      <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--/.Card-->
+        </div>
+      </div>
+    </div>
+
+    <!-- SNIPPETS FROM NIKS -->
+    <footer class="page-footer mt-5">
+      <div class="container-fluid text-md-left py-5">
+        <div class="row row-margin">
+          <div class="col-md-4 col-lg-4">
+            <a class="" href="./index.html"
+              ><img
+                style="border: white solid 2px"
+                class="Logo img-fluid"
+                src="https://i.imgur.com/30zUC0T.png"
+                alt="ZupClothing Logo"
+            /></a>
+
+            <!-- <p class="footer-about h5 mt-3">About Zup Clothing</p> -->
+            <p class="h6 mt-4 pr-3">
+              ZC is the leading name in online shopping for fashion, carrying an
+              ever-expanding line-up of top local and international brands
+              tailored for consumers around the world. Our selection of over
+              120.000 products covers every aspect of fashion, for men and women
+              and so much more.
+            </p>
+            <div class="footer-social-icons mb-sm-3">
+              <p class="footer-follow h5 mt-3">FIND US ON</p>
+              <ul class="list-unstyled list-inline mb-0 mt-4">
+                <li class="list-inline-item">
+                  <a class="" href="#" target="_blank">
+                    <i class="fab fa-facebook fa-2x"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="" href="#" target="_blank">
+                    <i class="fab fa-twitter fa-2x"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="" href="#" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-lg-2">
+            <div class="helpful-links">
+              <p class="h5 footer-products">Products</p>
+              <ul class="list-unstyled mt-4">
+                <li>
+                  <a href="./mens.html">Men</a>
+                </li>
+                <li>
+                  <a href="./womens.html">Women</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-lg-2">
+            <div class="helpful-links">
+              <p class="h5 footer-info">Information</p>
+              <ul class="list-unstyled mt-4">
+                <li>
+                  <a href="./index.html">Home</a>
+                </li>
+                <li>
+                  <a href="./contact.html">Contact</a>
+                </li>
+
+                <li>
+                  <a href="./team.html">Developers</a>
+                </li>
+                <!-- FEEDBACK MODAL -->
+                <li>
+                  <a href="" data-toggle="modal" data-target="#feedback"
+                    >Feedback</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-4">
+            <div class="newtozupclothing">
+              <p class="h5 footer-info">Subscribe to our newsletter!</p>
+              <ul class="list-unstyled mt-4">
+                <li>
+                  <p>
+                    Be the first one to get the latest updates from Zup Clothing
+                    and get
+                    <span class="voucher" style="text-decoration: underline"
+                      >Php 500 VOUCHER.</span
+                    >
+                  </p>
+                </li>
+                <li>
+                  <div class="md-form">
+                    <input
+                      type="text"
+                      id="form-subject"
+                      class="form-control"
+                      style="color: white"
+                    />
+                    <label for="form-subject" class="text-white"
+                      >Email Address</label
+                    >
+                  </div>
+                  <!-- BUTTONS RESPONSIVE ISSUE HERE -->
+                  <div style="display: flex; justify-content: center">
+                    <button type="button" class="button btn-block btnmen">
+                      SUBSCRIBE
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center py-3 text-white">
+        © 2020
+        <a href="#">Zup Clothing - All rights reserved.</a>
+        <p>
+          Created with dedication, hard work and passion by Group 2 - Creative
+          Web Design Batch 1 -
+          <a
+            href="https://www.facebook.com/mindtechTC/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Mindtech Training And Development Institute Inc.</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- Sign-up Modal -->
     <div
       class="modal fade"
       id="signUp"
@@ -516,7 +769,7 @@ It is a collaboration of the best professionals and product designers.
               </div>
 
               <hr class="mb-1" />
-              <button class="btn purple-gradient btn-sm btn-block" type="submit">
+              <button class="btn btn-purple btn-lg btn-block" type="submit">
                 Submit
               </button>
             </form>
@@ -525,15 +778,27 @@ It is a collaboration of the best professionals and product designers.
       </div>
     </div>
 
-      <!-- jQuery -->
-  <script type="text/javascript" src="./frameworks/MDB/js/jquery.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="./frameworks/MDB/js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="./frameworks/MDB/js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="./frameworks/MDB/js/mdb.min.js"></script>
-  <!-- For NAV and MODALS-->
+    <!-- jQuery -->
+    <script
+      type="text/javascript"
+      src="./frameworks/MDB/js/jquery.min.js"
+    ></script>
+    <!-- Bootstrap tooltips -->
+    <script
+      type="text/javascript"
+      src="./frameworks/MDB/js/popper.min.js"
+    ></script>
+    <!-- Bootstrap core JavaScript -->
+    <script
+      type="text/javascript"
+      src="./frameworks/MDB/js/bootstrap.min.js"
+    ></script>
+    <!-- MDB core JavaScript -->
+    <script
+      type="text/javascript"
+      src="./frameworks/MDB/js/mdb.min.js"
+    ></script>
+    <!-- For NAV and MODALS-->
     <script src="./js/forNav.js"></script>
   </body>
 </html>

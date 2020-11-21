@@ -21,5 +21,7 @@ window.jQuery ||
   );
 
 $(window).on("load", function () {
-  $("#myModal").modal("show");
+  setTimeout(function () {
+    $("#myModal").modal();
+  }, 3000);
 });

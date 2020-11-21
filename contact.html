@@ -85,7 +85,7 @@
       }
       .btnsubmit {
         background-color: transparent;
-        color: #fff;
+        color: black;
         border: 2px solid #9b59b6;
         transition: 0.5s;
         font-size: 16px;
@@ -110,12 +110,13 @@
       #contact-bg {
         width: 100%;
         height: 40vh;
-        background-image: url("https://i.imgur.com/QMFI6bUh.jpg") !important; /*Pakichange nalang ito nung bg*/
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
+        background: #714185;
+        background-image: url("https://i.imgur.com/QMFI6bUh.jpg");
+        background-blend-mode: overlay;
         background-attachment: fixed;
-        opacity: 0.9;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
       }
     </style>
   </head>
@@ -132,21 +133,40 @@
           </div>
           <div id="mainListDiv" class="main_list">
             <ul class="navlinks">
-              <li><a href="./index.html">Home</a></li>
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
               <li><a href="./mens.html">Mens</a></li>
               <li><a href="./womens.html">Womens</a></li>
               <li>
-                <a href="./contact.html">Contact</a>
+                <a
+                  style="font-weight: bolder; text-decoration: underline"
+                  href="./contact.html"
+                  >Contact</a
+                >
               </li>
-              <li>
-                <a href="#"><i class="fas fa-search fa-lg"></i></a>
+              <!-- ICONS -->
+              <li class="menu_search_icons">
+                <a href=""><i class="fas fa-search fa-lg"></i></a>
               </li>
-              <li>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <li class="menu_shopping_cart_icons">
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
               </li>
-              <li>
+              <li class="menu_account_icons">
                 <a data-toggle="modal" data-target="#signUp">
                   <i class="fas fa-user-circle fa-lg"></i>
+                </a>
+              </li>
+              <!-- ICONS TO WORDS -->
+              <li class="menu_search_words">
+                <a href=""><i class="fas fa-search fa-lg"></i> Search</a>
+              </li>
+              <li class="menu_shopping_cart_words">
+                <a href=""><i class="fas fa-shopping-cart"></i> Cart</a>
+              </li>
+              <li class="menu_account_words">
+                <a data-toggle="modal" data-target="#signUp">
+                  <i class="fas fa-user-circle fa-lg"></i> Sign-up
                 </a>
               </li>
             </ul>
@@ -161,7 +181,7 @@
     </header>
 
     <div id="contact-bg">
-      <div class="container-fluid py-5">
+      <div class="container-fluid py-5" style="background-blend-mode: overlay">
         <div class="row">
           <div class="col-12 text-center text-white text-contact">
             <h1
@@ -184,25 +204,28 @@
     <div class="container-fluid py-5">
       <div class="row row-margin">
         <!-- Contact Form -->
-        <div class="col-lg-5 col-md-12 mb-4 mb-md-0">
+        <div
+          class="col-lg-5 col-md-12 mb-4 mb-md-0"
+          style="background-color: whitesmoke"
+        >
           <div class="md-form mt-3">
             <input type="email" id="form-fullname" class="form-control" />
-            <label for="form-fullname" class="text-white">Fullname*</label>
+            <label for="form-fullname">Fullname*</label>
           </div>
 
           <div class="md-form">
             <input type="text" id="form-subject" class="form-control" />
-            <label for="form-subject" class="text-white">Subject*</label>
+            <label for="form-subject">Subject*</label>
           </div>
 
           <div class="md-form">
             <input type="text" id="form-email" class="form-control" />
-            <label for="form-email" class="text-white">Email Address*</label>
+            <label for="form-email">Email Address*</label>
           </div>
 
           <div class="md-form">
             <input type="text" id="form-contact" class="form-control" />
-            <label for="form-contact" class="text-white">Contact number*</label>
+            <label for="form-contact">Contact number*</label>
           </div>
 
           <div class="md-form mb-3">
@@ -211,7 +234,7 @@
               class="md-textarea form-control"
               rows="3"
             ></textarea>
-            <label for="form-message" class="text-white">Message</label>
+            <label for="form-message">Message</label>
           </div>
           <button type="button" class="button btnsubmit btn-block ml-0">
             SUBMIT<i class="far fa-paper-plane ml-2"></i>
@@ -220,7 +243,7 @@
         <!-- End of Contact Form -->
 
         <!-- GMap with icons -->
-        <div class="col-lg-7 col-md-12 mb-0 mb-md-0 mt-3 text-white">
+        <div class="col-lg-7 col-md-12 mb-0 mb-md-0 text-white">
           <!--Google map-->
           <div id="map-container-google-1" class="z-depth-1 map-container mb-4">
             <iframe
@@ -262,12 +285,14 @@
           <div class="col-md-4 col-lg-4">
             <a class="" href="./index.html"
               ><img
+                style="border: white solid 2px"
                 class="Logo img-fluid"
                 src="https://i.imgur.com/30zUC0T.png"
                 alt="ZupClothing Logo"
             /></a>
+
             <!-- <p class="footer-about h5 mt-3">About Zup Clothing</p> -->
-            <p class="h6 mt-4">
+            <p class="h6 mt-4 pr-3">
               ZC is the leading name in online shopping for fashion, carrying an
               ever-expanding line-up of top local and international brands
               tailored for consumers around the world. Our selection of over
@@ -317,20 +342,15 @@
                   <a href="./index.html">Home</a>
                 </li>
                 <li>
-                  <a href="./about.html">About</a>
-                </li>
-                <li>
                   <a href="./contact.html">Contact</a>
                 </li>
+
                 <li>
                   <a href="./team.html">Developers</a>
                 </li>
                 <!-- FEEDBACK MODAL -->
                 <li>
-                  <a
-                    style="color: violet"
-                    data-toggle="modal"
-                    data-target="#feedback"
+                  <a href="" data-toggle="modal" data-target="#feedback"
                     >Feedback</a
                   >
                 </li>
@@ -340,32 +360,34 @@
 
           <div class="col-md-4 col-lg-4">
             <div class="newtozupclothing">
-              <p class="h5 footer-info">New to Zup Clothing?</p>
+              <p class="h5 footer-info">Subscribe to our newsletter!</p>
               <ul class="list-unstyled mt-4">
                 <li>
                   <p>
                     Be the first one to get the latest updates from Zup Clothing
                     and get
-                    <span class="voucher"><b>Php 500 VOUCHER.</b></span>
+                    <span class="voucher" style="text-decoration: underline"
+                      >Php 500 VOUCHER.</span
+                    >
                   </p>
                 </li>
                 <li>
                   <div class="md-form">
-                    <input type="text" id="form-subject" class="form-control" />
+                    <input
+                      type="text"
+                      id="form-subject"
+                      class="form-control"
+                      style="color: white"
+                    />
                     <label for="form-subject" class="text-white"
                       >Email Address</label
                     >
                   </div>
                   <!-- BUTTONS RESPONSIVE ISSUE HERE -->
-                  <div style="display: flex; justify-content: space-between">
-                    <!-- <div class="float-left"> -->
-                    <button type="button" class="button btnwomen">
-                      FOR WOMEN
+                  <div style="display: flex; justify-content: center">
+                    <button type="button" class="button btn-block btnmen">
+                      SUBSCRIBE
                     </button>
-                    <!-- </div> -->
-                    <!-- <div class="float-right"> -->
-                    <button type="button" class="button btnmen">FOR MEN</button>
-                    <!-- </div> -->
                   </div>
                 </li>
               </ul>
@@ -386,7 +408,6 @@
             >Mindtech Training And Development Institute Inc.</a
           >
         </p>
-        <a href="./team.html">Meet the team!</a>
       </div>
     </footer>
 
@@ -575,10 +596,7 @@
               </div>
 
               <hr class="mb-1" />
-              <button
-                class="btn purple-gradient btn-sm btn-block"
-                type="submit"
-              >
+              <button class="btn btn-purple btn-lg btn-block" type="submit">
                 Submit
               </button>
             </form>

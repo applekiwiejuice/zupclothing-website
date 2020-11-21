@@ -6,7 +6,7 @@ body {
   background-color: black;
   color: #bc6ff1;
   background: #00072b;
-  background-image: url("https://i.imgur.com/tuI3r1F.png");
+  background-image: url("https://i.imgur.com/iuB4CsBh.jpg");
   background-blend-mode: overlay;
   background-attachment: fixed;
   background-position: center;
@@ -59,6 +59,7 @@ p .raleway {
   transition: transform 0.5s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 }
 
-/* .feedback_footer {
-  color: violet;
-} */
+.taglines {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+}

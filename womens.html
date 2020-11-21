@@ -83,7 +83,9 @@
           </div>
           <div id="mainListDiv" class="main_list">
             <ul class="navlinks">
-              <li><a href="./index.html">Home</a></li>
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
               <li><a href="./mens.html">Mens</a></li>
               <li>
                 <a
@@ -93,15 +95,28 @@
                 >
               </li>
               <li><a href="./contact.html">Contact</a></li>
-              <li>
-                <a href="#"><i class="fas fa-search fa-lg"></i></a>
+              <!-- ICONS -->
+              <li class="menu_search_icons">
+                <a href=""><i class="fas fa-search fa-lg"></i></a>
               </li>
-              <li>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+              <li class="menu_shopping_cart_icons">
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
               </li>
-              <li>
+              <li class="menu_account_icons">
                 <a data-toggle="modal" data-target="#signUp">
                   <i class="fas fa-user-circle fa-lg"></i>
+                </a>
+              </li>
+              <!-- ICONS TO WORDS -->
+              <li class="menu_search_words">
+                <a href=""><i class="fas fa-search fa-lg"></i> Search</a>
+              </li>
+              <li class="menu_shopping_cart_words">
+                <a href=""><i class="fas fa-shopping-cart"></i> Cart</a>
+              </li>
+              <li class="menu_account_words">
+                <a data-toggle="modal" data-target="#signUp">
+                  <i class="fas fa-user-circle fa-lg"></i> Sign-up
                 </a>
               </li>
             </ul>
@@ -116,7 +131,7 @@
     </header>
 
     <main role="main" style="padding-top: 100px">
-      <section class="jumbotron text-center ripe-malinka-gradient">
+      <section class="jumbotron text-center" style="background: none">
         <div class="container">
           <h1
             class="jumbotron-heading"
@@ -186,7 +201,7 @@
                           class="shoppingcart"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Cart"
+                          title="Wishlist"
                         >
                           <i class="cart fas fa-heart ml-3"></i> Wishlist
                         </a>
@@ -243,7 +258,7 @@
                           class="shoppingcart"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Cart"
+                          title="Wishlist"
                         >
                           <i class="cart fas fa-heart ml-3"></i> Wishlist
                         </a>
@@ -301,7 +316,7 @@
                           class="shoppingcart"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Cart"
+                          title="Wishlist"
                         >
                           <i class="cart fas fa-heart ml-3"></i> Wishlist
                         </a>
@@ -359,7 +374,7 @@
                           class="shoppingcart"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Cart"
+                          title="Wishlist"
                         >
                           <i class="cart fas fa-heart ml-3"></i> Wishlist
                         </a>
@@ -393,7 +408,8 @@
                   <!--Text-->
                   <span class="badge badge-danger mb-3">bestseller</span>
                   <p class="card-text text-white">
-                    Light up your look with this flawless fit.
+                    Light up your look with this flawless fit, Happy yellow
+                    shirt to brighten up your day.
                   </p>
                   <div class="card-footer pb-0">
                     <div class="row mb-0">
@@ -416,7 +432,7 @@
                           class="shoppingcart"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Cart"
+                          title="Wishlist"
                         >
                           <i class="cart fas fa-heart ml-3"></i> Wishlist
                         </a>
@@ -474,7 +490,7 @@
                           class="shoppingcart"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Cart"
+                          title="Wishlist"
                         >
                           <i class="cart fas fa-heart ml-3"></i> Wishlist
                         </a>
@@ -532,7 +548,7 @@
                           class="shoppingcart"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Cart"
+                          title="Wishlist"
                         >
                           <i class="cart fas fa-heart ml-3"></i> Wishlist
                         </a>
@@ -590,7 +606,7 @@
                           class="shoppingcart"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Cart"
+                          title="Wishlist"
                         >
                           <i class="cart fas fa-heart ml-3"></i> Wishlist
                         </a>
@@ -648,7 +664,7 @@
                           class="shoppingcart"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Cart"
+                          title="Wishlist"
                         >
                           <i class="cart fas fa-heart ml-3"></i> Wishlist
                         </a>
@@ -680,12 +696,14 @@
           <div class="col-md-4 col-lg-4">
             <a class="" href="./index.html"
               ><img
+                style="border: white solid 2px"
                 class="Logo img-fluid"
                 src="https://i.imgur.com/30zUC0T.png"
                 alt="ZupClothing Logo"
             /></a>
+
             <!-- <p class="footer-about h5 mt-3">About Zup Clothing</p> -->
-            <p class="h6 mt-4">
+            <p class="h6 mt-4 pr-3">
               ZC is the leading name in online shopping for fashion, carrying an
               ever-expanding line-up of top local and international brands
               tailored for consumers around the world. Our selection of over
@@ -735,20 +753,15 @@
                   <a href="./index.html">Home</a>
                 </li>
                 <li>
-                  <a href="./about.html">About</a>
-                </li>
-                <li>
                   <a href="./contact.html">Contact</a>
                 </li>
+
                 <li>
                   <a href="./team.html">Developers</a>
                 </li>
                 <!-- FEEDBACK MODAL -->
                 <li>
-                  <a
-                    style="color: violet"
-                    data-toggle="modal"
-                    data-target="#feedback"
+                  <a href="" data-toggle="modal" data-target="#feedback"
                     >Feedback</a
                   >
                 </li>
@@ -758,32 +771,34 @@
 
           <div class="col-md-4 col-lg-4">
             <div class="newtozupclothing">
-              <p class="h5 footer-info">New to Zup Clothing?</p>
+              <p class="h5 footer-info">Subscribe to our newsletter!</p>
               <ul class="list-unstyled mt-4">
                 <li>
                   <p>
                     Be the first one to get the latest updates from Zup Clothing
                     and get
-                    <span class="voucher"><b>Php 500 VOUCHER.</b></span>
+                    <span class="voucher" style="text-decoration: underline"
+                      >Php 500 VOUCHER.</span
+                    >
                   </p>
                 </li>
                 <li>
                   <div class="md-form">
-                    <input type="text" id="form-subject" class="form-control" />
+                    <input
+                      type="text"
+                      id="form-subject"
+                      class="form-control"
+                      style="color: white"
+                    />
                     <label for="form-subject" class="text-white"
                       >Email Address</label
                     >
                   </div>
                   <!-- BUTTONS RESPONSIVE ISSUE HERE -->
-                  <div style="display: flex; justify-content: space-between">
-                    <!-- <div class="float-left"> -->
-                    <button type="button" class="button btnwomen">
-                      FOR WOMEN
+                  <div style="display: flex; justify-content: center">
+                    <button type="button" class="button btn-block btnmen">
+                      SUBSCRIBE
                     </button>
-                    <!-- </div> -->
-                    <!-- <div class="float-right"> -->
-                    <button type="button" class="button btnmen">FOR MEN</button>
-                    <!-- </div> -->
                   </div>
                 </li>
               </ul>
@@ -992,10 +1007,7 @@
               </div>
 
               <hr class="mb-1" />
-              <button
-                class="btn purple-gradient btn-sm btn-block"
-                type="submit"
-              >
+              <button class="btn btn-purple btn-lg btn-block" type="submit">
                 Submit
               </button>
             </form>

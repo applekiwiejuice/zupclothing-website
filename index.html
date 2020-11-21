@@ -29,8 +29,10 @@
     <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" async>
   <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Zilla+Slab:wght@700&display=swap" async>
 
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
     <!-- BOOTSTRAP SOCIAL -->
     <link rel="stylesheet" href="./css/bootstrap-social.css" async/>
 
@@ -66,7 +68,7 @@
         <div class="container1">
           <div class="logo animate__animated animate__fadeIn">
             <a href="#"
-              ><img
+              ><img 
                 src="https://i.imgur.com/30zUC0T.png"
                 alt="ZupClothing Logo"
             /></a>
@@ -83,15 +85,28 @@
               <li><a href="./mens.html">Mens</a></li>
               <li><a href="./womens.html">Womens</a></li>
               <li><a href="./contact.html">Contact</a></li>
-              <li>
+              <!-- ICONS -->
+              <li class="menu_search_icons">
                 <a href=""><i class="fas fa-search fa-lg"></i></a>
               </li>
-              <li>
+              <li class="menu_shopping_cart_icons">
                 <a href=""><i class="fas fa-shopping-cart"></i></a>
               </li>
-              <li>
+              <li class="menu_account_icons">
                 <a data-toggle="modal" data-target="#signUp">
                   <i class="fas fa-user-circle fa-lg"></i>
+                </a>
+              </li>
+              <!-- ICONS TO WORDS -->
+              <li class="menu_search_words">
+                <a href=""><i class="fas fa-search fa-lg"></i> Search</a>
+              </li>
+              <li class="menu_shopping_cart_words">
+                <a href=""><i class="fas fa-shopping-cart"></i> Cart</a>
+              </li>
+              <li class="menu_account_words">
+                <a data-toggle="modal" data-target="#signUp">
+                  <i class="fas fa-user-circle fa-lg"></i> Sign-up
                 </a>
               </li>
             </ul>
@@ -120,11 +135,11 @@
               src="https://i.imgur.com/NIRPIpsh.jpg"
               alt="First slide"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h1 style="filter: drop-shadow(2px 4px 8px black); font-size: 2rem;">
+            <div class="carousel-caption">
+              <h1 class="taglines" style="filter: drop-shadow(2px 4px 8px black); font-size: 2rem;">
                 <img
                   class="img-fluid"
-                  style="width: 5%; filter: drop-shadow(2px 4px 8px black); border-radius: 50%"
+                  style="width: 10%; filter: drop-shadow(2px 4px 8px black); border-radius: 50%"
                   src="https://i.imgur.com/xirkbAI.jpg"
                 />
                 "Life isn't perfect but your outfit can be."
@@ -140,11 +155,11 @@
               src="https://i.imgur.com/5ZLIQvih.jpg"
               alt="Second slide"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h1 style="filter: drop-shadow(2px 4px 8px black); font-size: 2rem;">
+            <div class="carousel-caption">
+              <h1 class="taglines" style="filter: drop-shadow(2px 4px 8px black); font-size: 2rem;">
                 <img
                   class="img-fluid"
-                  style="width: 5%; filter: drop-shadow(2px 4px 8px black); border-radius: 50%"
+                  style="width: 10%; filter: drop-shadow(2px 4px 8px black); border-radius: 50%"
                   src="https://i.imgur.com/xirkbAI.jpg"
                 />
                 Fashion can do anything
@@ -160,16 +175,16 @@
               src="https://i.imgur.com/XCKRYMth.jpg"
               alt="Third slide"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h1 style="filter: drop-shadow(2px 4px 8px black); font-size: 2rem;">
+            <div class="carousel-caption">
+              <h1 class="taglines" style="filter: drop-shadow(2px 4px 8px black); font-size: 2rem;">
                 <img
                   class="img-fluid"
-                  style="width: 5%; filter: drop-shadow(2px 4px 8px black); border-radius: 50%"
+                  style="width: 10%; filter: drop-shadow(2px 4px 8px black); border-radius: 50%"
                   src="https://i.imgur.com/xirkbAI.jpg"
                 />
                 <span
                   style="filter: drop-shadow(2px 4px 8px black);"
-                  >50% ON YOUR FIRST ORDER!</span
+                  ><b>50% OFF!</b> ON YOUR FIRST ORDER!</span
                 >
               </h1>
               <a class="btn btn-purple btn-lg" href="#" role="button"
@@ -184,11 +199,11 @@
               src="https://i.imgur.com/fp9Febuh.jpg"
               alt="Fourth slide"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h1 style="filter: drop-shadow(2px 4px 8px black); font-size: 2rem;">
+            <div class="carousel-caption">
+              <h1 class="taglines" style="filter: drop-shadow(2px 4px 8px black); font-size: 2rem;">
                 <img
                   class="img-fluid"
-                  style="width: 5%; filter: drop-shadow(2px 4px 8px black); border-radius: 50%"
+                  style="width: 10%; filter: drop-shadow(2px 4px 8px black); border-radius: 50%"
                   src="https://i.imgur.com/xirkbAI.jpg"
                 /> Style with attitude.
               </h1>
@@ -204,7 +219,7 @@
               src="https://i.imgur.com/c20CyrSh.jpg"
               alt="Fifth slide"
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <img
                 class="img-fluid"
                 style="width: 15%; filter: drop-shadow(2px 4px 8px black); border-radius: 50%"
@@ -243,18 +258,18 @@
 
     <main role="main">
       <div class="container marketing">
-        <!-- Three columns of text -->
+       
         <div class="row text-center">
           <div class="col-lg-6">
             <img
               class="rounded-circle imgCover"
-              src="https://i.imgur.com/PRBYQicm.jpg"
+              src="https://i.imgur.com/LqGyTtMh.jpg"
               alt="Generic placeholder image"
               width="140"
               height="140"
             />
             <h2 style="margin-top: 15px">ZC MEN</h2>
-            <p style="color: white; font-size: 1.3rem;">
+            <p  class="text-center ml-5 mr-5" style="color: white; font-size: 1.3rem;">
               Our collection is a concentrate of color and innovation. The ZC
               men’s apparel focuses on casual clothing that you can mix and
               match with creativity, like business and casual shirts, printed or
@@ -262,8 +277,8 @@
               with pants and jeans.
             </p>
             <p>
-              <a class="btn purple-gradient" href="#" role="button"
-                >SHOP NOW &raquo;</a
+              <a class="btn btn-purple btn-lg" href="#" role="button"
+                >SHOP NOW <i class="cart fas fa-shopping-cart"></i> &raquo;</a
               >
             </p>
           </div>
@@ -271,18 +286,18 @@
           <div class="col-lg-6">
             <img
               class="rounded-circle imgCover"
-              src="https://i.imgur.com/Cj0Zs7Wm.jpg"
+              src="https://i.imgur.com/K6UBYMIh.jpg"
               alt="Generic placeholder image"
               width="140"
               height="140"
             />
             <h2 style="margin-top: 15px">ZC WOMEN</h2>
-            <p style="color: white; font-size: 1.3rem;">
+            <p class="text-center ml-5 mr-5" style="color: white; font-size: 1.3rem;">
               Shop the latest women’s fashion online at ZC and discover new favourites in women’s clothing. Find everything from casual day dresses to sharp office wear. We have jeans in every fit, premium quality items and the latest fashion essentials. 
             </p>
             <p>
-              <a class="btn purple-gradient" href="#" role="button"
-                >SHOP NOW &raquo;</a
+              <a class="btn btn-purple btn-lg" href="#" role="button"
+                >SHOP NOW <i class="cart fas fa-shopping-cart"></i> &raquo;</a
               >
             </p>
           </div>
@@ -302,8 +317,8 @@
             <p class="lead text-white">
               Colorful and carefree, our collection is inspired by the values that have always distinguished the brand. Our women’s apparel offers stylish and versatile garments, which can all be mix and matched based on color.
             </p>
-            <p><a class="btn purple-gradient" href="#" role="button"
-                >SHOP NOW &raquo;</a
+            <p><a class="btn purple-gradient ml-0" href="#" role="button"
+                >SHOP NOW <i class="cart fas fa-shopping-cart"></i> &raquo;</a
               ></p>
 
           </div>
@@ -311,7 +326,7 @@
             <img
               class="featurette-image img-fluid mx-auto"
               data-src="holder.js/500x500/auto"
-              src="https://i.imgur.com/R238yslh.jpg"
+              src="https://i.imgur.com/W2b0olEh.jpg"
               alt="Generic placeholder image"
             />
           </div>
@@ -328,15 +343,15 @@
             <p class="lead text-white">
               In the Mens catalogue you will also find a modern and colorful collection that is suitable for any season. The true spotlight always belongs to our iconic designs available in the extensive “ZC” palette.
             </p>
-            <p><a class="btn purple-gradient" href="#" role="button"
-                >SHOP NOW &raquo;</a
+            <p><a class="btn purple-gradient ml-0" href="#" role="button"
+                >SHOP NOW <i class="cart fas fa-shopping-cart"></i> &raquo;</a
               ></p>
           </div>
           <div class="col-md-5 order-md-1 transform">
             <img
               class="featurette-image img-fluid mx-auto"
               data-src="holder.js/500x500/auto"
-              src="https://i.imgur.com/WQNYFlLh.jpg"
+              src="https://i.imgur.com/KSCEYryh.jpg"
               alt="Generic placeholder image"
             />
           </div>
@@ -353,15 +368,15 @@
             <p class="lead text-white">
               As the World's Online Fashion Destination, we create endless style possibilities through an ever-expanding range of products form the most coveted international and local brands, putting you at the centre of it all. With ZC, You Own Now.
             </p>
-            <p><a class="btn purple-gradient" href="#" role="button"
-                >SHOP NOW &raquo;</a
+            <p><a class="btn purple-gradient ml-0" href="#" role="button"
+                >SHOP NOW <i class="cart fas fa-shopping-cart"></i> &raquo;</a
               ></p>
           </div>
           <div class="col-md-5 transform">
             <img
               class="featurette-image img-fluid mx-auto"
               data-src="holder.js/500x500/auto"
-              src="https://i.imgur.com/GjLjFJ4h.jpg"
+              src="https://i.imgur.com/Wrjye5Dh.jpg"
               alt="Generic placeholder image"
             />
           </div>
@@ -380,12 +395,14 @@
             <div class="col-md-4 col-lg-4">
               <a class="" href="./index.html"
                 ><img
+                style="border: white solid 2px"
                   class="Logo img-fluid"
                   src="https://i.imgur.com/30zUC0T.png"
                   alt="ZupClothing Logo"
               /></a>
+              
               <!-- <p class="footer-about h5 mt-3">About Zup Clothing</p> -->
-              <p class="h6 mt-4">
+              <p class="h6 mt-4 pr-3">
                 ZC is the leading name in online shopping for fashion, carrying an ever-expanding line-up of top local and international brands tailored for consumers around the world. Our selection of over 120.000 products covers every aspect of fashion, for men and women and so much more.
               </p>
               <div class="footer-social-icons mb-sm-3">
@@ -439,7 +456,7 @@
                   </li>
                    <!-- FEEDBACK MODAL -->
                   <li>
-                    <a style="color: violet;"data-toggle="modal" data-target="#feedback">Feedback</a>
+                    <a href="" data-toggle="modal" data-target="#feedback">Feedback</a>
                   </li>
                 </ul>
               </div>
@@ -447,13 +464,13 @@
 
             <div class="col-md-4 col-lg-4">
               <div class="newtozupclothing">
-                <p class="h5 footer-info">New to Zup Clothing?</p>
+                <p class="h5 footer-info">Subscribe to our newsletter!</p>
                 <ul class="list-unstyled mt-4">
                   <li>
                     <p>
                       Be the first one to get the latest updates from Zup
                       Clothing and get
-                      <span class="voucher"><b>Php 500 VOUCHER.</b></span>
+                      <span class="voucher" style="text-decoration: underline ;">Php 500 VOUCHER.</span>
                     </p>
                   </li>
                   <li>
@@ -462,23 +479,20 @@
                         type="text"
                         id="form-subject"
                         class="form-control"
+                        style="color: white;"
                       />
                       <label for="form-subject" class="text-white"
                         >Email Address</label
                       >
                     </div>
                     <!-- BUTTONS RESPONSIVE ISSUE HERE -->
-                    <div style="display: flex; justify-content: space-between">
-                      <!-- <div class="float-left"> -->
-                      <button type="button" class="button btnwomen">
-                        FOR WOMEN
+                    <div style="display: flex; justify-content: center">
+                     
+                    
+                      <button type="button" class="button btn-block btnmen">
+                        SUBSCRIBE
                       </button>
-                      <!-- </div> -->
-                      <!-- <div class="float-right"> -->
-                      <button type="button" class="button btnmen">
-                        FOR MEN
-                      </button>
-                      <!-- </div> -->
+                     
                     </div>
                   </li>
                 </ul>
@@ -499,10 +513,10 @@
     <div class="modal" tabindex="-1" role="dialog" id="myModal">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
+          <div>
             <button
               type="button"
-              class="close"
+              class="close mr-2 mt-2"
               data-dismiss="modal"
               aria-label="Close"
             >
@@ -514,6 +528,7 @@
               <span style="color: red">50% OFF!</span> on your first order!
             </h1>
             <img
+            style="border: black solid 2px"
               src="https://i.imgur.com/xirkbAI.jpg"
               width="300"
               height="300"
@@ -523,12 +538,12 @@
           <div class="modal-footer" style="text-align: center; margin: auto">
             <button
               type="button"
-              class="btn btn-lg btn-success"
+              class="btn btn-lg btn-outline-secondary waves-effect"
               data-dismiss="modal"
             >
               Yes!
             </button>
-            <button type="button" class="btn btn-lg btn-secondary" data-dismiss="modal">
+            <button type="button" class="btn btn-lg btn-outline-default waves-effect" data-dismiss="modal">
               No thanks.
             </button>
           </div>
@@ -721,7 +736,7 @@
               </div>
 
               <hr class="mb-1" />
-              <button class="btn purple-gradient btn-sm btn-block" type="submit">
+              <button class="btn btn-purple btn-lg btn-block" type="submit">
                 Submit
               </button>
             </form>
